@@ -3,6 +3,7 @@ import {GoogleGenerativeAI} from "@google/generative-ai";
 
 import {config} from 'dotenv'; config();
 const openapiKey = process.env.OPEN_API_KEY;
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const openai = new OpenAI({
 	apiKey: openapiKey
 });
@@ -77,9 +78,7 @@ const w_Gemini = async (data) => {
 	let message = pre + data.topic + resultFormat;
 	try
 	{
-		
 
-		const genAI = new GoogleGenerativeAI("AIzaSyALmsg26uvvlRMbUA8Ju4hhn93OLbmR6G0");
 		const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"});
 
 		const prompt = message;
