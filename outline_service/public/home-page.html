@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" id='theme' href="./css/theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/frame.css">
+		<link rel="stylesheet" href="./css/grid.css">
+		<link rel="stylesheet" href="./css/home-page.css">
+		<link rel="stylesheet" href="./css/loader.css">
+		<link rel="icon" href="./icon/favicon.svg" type="image/svg">
+
+		<title>Content maker</title>
+		<script src='./js/racoon-pieces.js'></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header flx-row flx--jtf-start flx--al-center">
+				<div class='header__icon-container'>
+					<img class="header__icon" src="./icon/grid-menu.svg" alt="">
+				</div>
+				<div class='header__title' style='margin-left: 10px;'>
+					AI tool kit
+				</div>
+			</div>
+			
+			<div class="content-container">
+				<div id='content-box' class="content flx-column flx-jtf-start">
+					<div class="flx-row flx--gap-15px">
+						<div class='main-menu__icon flx-column flx--al-center' invoker-spell='gotoFacebookContentKit'>
+							<img class="list-item__img" src="./icon/content-management-system.png" alt="">
+							<div style='color: var(--text-color);'>công cụ khác</div>
+						</div>
+						<div class='flx-column flx--al-center' invoker-spell='gotoFunnelChanel' style='background-color: var(--main-color);'>
+							<img class="list-item__img" src="./icon/fillter-fill-mono.svg" alt="">
+							<div>funnel chanel</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/content-->
+			<div id='loader__container' class="loader__container hidden">
+				<div class="loader__warper">
+					<div class="loader"></div>
+				</div>
+			</div>
+			<div class="footer">
+				Hatuma AI-agent tool kit 
+			</div>
+		</div>
+		<script src="./js/helper.js"></script>
+		<script src="./js/ui.js"></script>
+		<script src="./js/grid-menu.js"></script>
+	</body>
+
+</html>

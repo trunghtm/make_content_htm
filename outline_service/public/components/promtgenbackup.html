@@ -1,0 +1,120 @@
+﻿<div class="flx-row flx--jtf-space-between --full-width" style='padding: 15px;'>
+	<!--form-->
+	<div id='make-content-form' class="make-content-form flx-column flx--al-start flx--gap-15px">
+		<div class="input-container --full-width">
+			<p class='form-note'>Tên sản phẩm dịch vụ:</p>
+			<textarea name="" class='input' id="" placeholder='Ví dụ: Sữa chitose'></textarea>
+		</div>
+		<div class="input-container --full-width">
+			<p class='form-note'>Mô tả sản phẩm/ dịch vụ:</p>
+			<p style='margin:0px; font-size: 11px; font-style: italic;'>Mô tả chức năng, công dụng sản phẩm/ dịch vụ. Các
+				thông số kĩ thuật nổi bật...</p>
+			<textarea name="" class='input' id=""
+				placeholder="Ví dụ: Mô tả chức năng, công dụng sản phẩm/ dịch vụ. Các thông số kĩ thuật nổi bật..."></textarea>
+		</div>
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="input-container">
+				<p>Dịp lễ:</p>
+				<textarea name="" class='input input--inline' id="" placeholder='nhập'></textarea>
+			</div>
+			<div class="input-container">
+				<p class='form-note'>Khuyến mại:</p>
+				<textarea name="" class='input input--inline' id="" placeholder='nhập'></textarea>
+			</div>
+		</div>
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="input-container">
+				<p class='form-note'>Số lượng bài:</p>
+				<select class='input input--inline' name="" id="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="2">3</option>
+				</select>
+			</div>
+			<div class="input-container">
+				<p class='form-note'>Tông giọng:</p>
+				<select name="tone" id="formBasicEmail" class="input input--inline">
+					<option value="0" selected="">Thuyết phục</option>
+					<option value="1">Chuyên nghiệp</option>
+					<option value="5">Trang trọng</option>
+					<option value="3">Khách quan</option>
+					<option value="6">Hào hứng</option>
+					<option value="2">Kinh ngạc</option>
+					<option value="4">Cảnh báo</option>
+					<option value="7">Vui vẻ</option>
+					<option value="8">Thân thiện</option>
+				</select>
+			</div>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="input-container">
+				<p class='form-note'>Nền tảng:</p>
+				<select name="" id="" class='input input--inline'>
+					<option value="facebook,Google,website">facebook,Google,website</option>
+					<option value="email">Email</option>
+				</select>
+			</div>
+			<div class="input-container">
+				<p class='form-note'>Ngôn ngữ:</p>
+				<select name="tone" id="formBasicEmail" class="input input--inline">
+					<option value="Tiếng Việt" selected="">Tiếng việt</option>
+					<option value="Tiếng Anh">English</option>
+				</select>
+			</div>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width">
+			<!-- formula select -->
+			<div class="input-container">
+				<p class='form-note'><a href='/components/prompt-formula.html' target='_blank'>❔</a>Chọn
+					công thức viết bài:</p>
+				<select class="input " name="role" id="prompt-formula" aria-placeholder='Chọn thẩm quyền cho dự án'>
+					<option value="AIDA" selected>AIDA</option>
+					<option value="APP">APP</option>
+					<option value="A FOREST">A FOREST</option>
+					<option value="BAB">BAB</option>
+					<option value="FAB">FAB</option>
+					<option value="FAS">FAS</option>
+					<option value="3S">3S</option>
+					<option value="3 reasons">3 Lý Do Vì Sao</option>
+					<option value="4A">4A</option>
+					<option value="4C">4C</option>
+					<option value="4P">4P</option>
+					<option value="4U">4U</option>
+					<option value="5 obstacles">5 Sự Cản Trở</option>
+					<option value="5A">5A</option>
+				</select>
+			</div>
+
+			<div class="input-container">
+				<p class="form-note">Có Emoji 🌟 ℹ️</p>
+				<div class="switch-container">
+					<div>
+						<label class="switch">
+							<input type="checkbox" checked>
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- button  -->
+		<div class="flx-row flx--jtf-center input-container --full-width">
+			<div>
+				<button class='button' invoker-spell='generatePrompt' id=''>Tạo quảng cáo</button>
+			</div>
+		</div>
+	</div>
+	<!--/form-->
+	<div class="splitter">
+
+	</div>
+	<div class="result-container">
+
+	</div>
+</div>

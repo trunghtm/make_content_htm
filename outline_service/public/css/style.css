@@ -1,0 +1,423 @@
+﻿a {
+	text-decoration: none;
+	border: none !important;
+}
+
+/*
+header style here
+*/
+.header {
+	background: var(--window-color);
+	color: #fff;
+	height: 70px;
+	border-bottom: 1px solid #e2e6ee;
+}
+
+.header__title {
+	color: rgb(37, 34, 110);
+	padding: 5px;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.header__icon-container {
+	display: inline-block;
+	color: #fff;
+	padding: 0;
+}
+
+
+.header__icon {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	color: #fff;
+}
+
+.header__icon:hover {
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+/*
+side bar style here
+*/
+.side-bar,
+.side-bar a {
+	background: var(--hight-light-color);
+	color: #fff;
+	overflow-y: auto;
+}
+
+/*
+page content style here
+*/
+.content-container {
+	background: var(--window-color);
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height:100%;
+}
+
+.content {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.tool-bar {
+	background-color: var(--hight-light-color);
+	color: #fff;
+	padding: 0;
+	min-height: 45px;
+}
+
+.tool-bar__container {
+	color: #fff;
+	padding: 0;
+}
+
+.tool-bar__container:hover {
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+.tool-bar__menu {
+	display: none;
+}
+
+#item-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/*
+list item style here
+*/
+.list-item {
+	color: #fff;
+	background: var(--main-color);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px 0;
+	width: 100%;
+}
+
+.list-item__img {
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+
+.list-item__icon {
+	height: 16px;
+	margin-left: 10px;
+}
+
+.--inactive {
+	fill: #fff;
+	color: #fff;
+}
+
+.--inactive {
+	fill: rgba(85, 85, 85, 0.603) !important;
+	color: rgba(85, 85, 85, 0.603) !important;
+}
+
+.list-item__title {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-left: 10px;
+}
+
+.list-item__info {
+	color: #fff;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.list-item * {
+	padding: 0;
+}
+
+
+.table-row {
+	border-top: 1px solid #686868;
+	border-bottom: 1px solid #686868;
+	align-items: flex-start;
+	align-content: flex-start;
+	background-color: var(--main-color);
+}
+
+.table-title {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--hight-light-color);
+}
+
+.table-cell,
+.table-title {
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	width: 150px;
+}
+
+.table__cell-title {
+	display: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.--long-text {
+	max-height: 300px;
+	overflow-y: auto;
+	/* text-overflow: ellipsis; */
+}
+
+/*
+form style here
+*/
+.form-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+	position: relative;
+	height: 100%;
+	width: 320px;
+	background: var(--window-color);
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.form__title {
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* .input {
+	font-size: 14px;
+
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid var(--hight-light-color);
+	background-color: var(--3rd-color);
+
+	max-width: 300px;
+	width: 100vmax;
+} */
+
+.input-date {
+	font-size: 14px;
+
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid var(--hight-light-color);
+	background-color: var(--3rd-color);
+	max-width: 300px;
+}
+
+.input:focus,
+.input-date:focus {
+	border-bottom: 2px solid var(--main-color);
+	outline: none;
+}
+
+
+.form button {
+	color: var(--text-color-dark-bg);
+	background: var(--main-color);
+
+	font-size: 16px;
+	text-align: center;
+	text-transform: capitalize;
+
+	border: none;
+	border-radius: 5px;
+
+	max-width: 300px;
+	width: 100vmax;
+}
+
+.form button:hover {
+	background: var(--3rd-color);
+}
+
+/* .diagram-row :not(:first-child)::before { */
+
+.diagram-node div,
+.diagram-container div {
+	padding: 0;
+	margin: 0;
+}
+
+.diagram-node {
+	position: relative;
+	background: rgb(16, 18, 4);
+	border-radius: 12px;
+	margin: 0 100px 12px 0 !important;
+	padding: 10px !important;
+}
+
+.diagram-node__header {
+	font-weight: bold;
+	text-transform: capitalize;
+	padding: 5px !important;
+	margin: 5px !important;
+}
+
+.diagram-node__item {
+	position: relative;
+	background: #333;
+	/* background: rgb(34, 39, 43); */
+	border-radius: 6px;
+	margin: 10px 0px;
+	padding: 5px !important;
+	margin: 5px !important;
+}
+
+.diagram-node__body {
+	max-width: 500px;
+}
+
+
+.diagram-node__footer {
+	background-color: rgb(75, 206, 151);
+	border-radius: 6px;
+	padding: 5px !important;
+	margin: 5px !important;
+}
+
+
+.diagram__first-node::before {
+	content: '';
+	position: absolute;
+	bottom: 50%;
+	left: -100px;
+	background-color: var(--window-color);
+	border-bottom: 2px solid var(--main-color);
+	border-right: none !important;
+	border-left: none !important;
+	border-bottom-left-radius: 0px !important;
+	height: 50% !important;
+	width: 100px !important;
+	z-index: 2;
+	/* padding-top: 100px; */
+}
+
+.article-node::before,
+.outline-node::before {
+	content: '';
+	position: absolute;
+	bottom: 50%;
+	right: 100%;
+	background-color: none;
+	border-left: 2px solid var(--main-color);
+	border-bottom: 2px solid var(--main-color);
+	border-bottom-left-radius: 20px;
+	height: 150%;
+	width: 50px;
+}
+
+/* .outline-row {
+	position: relative;
+}
+
+.outline-row::before{
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	right: 100%;
+	background-color: none;
+	border-left: 2px solid var(--main-color);
+	height: 100%;
+	width: 50px;
+} */
+
+.first-row {
+	position: relative;
+}
+
+.first-row::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+	background-color: none;
+	border-left: 2px solid var(--main-color);
+	height: 100%;
+	width: 50px;
+}
+
+
+
+/*
+footer style here
+*/
+.footer {
+	color: #fff;
+	background: #000;
+	width: 100%;
+}
+
+/*
+footer style here
+*/
+.button--main {
+	background-color: var(--main-color);
+	color: var(--text-color-dark-bg);
+	text-transform: capitalize;
+}
+
+/*
+common
+*/
+
+/*////////////////////////////////////////////////////////////*/
+/*dưới đây là các thành phần responsive */
+
+
+/*
+ * đây là cấu hình mặc định,
+ * đưa vào event max with 10000 này để hỗ trợ các thiết bị có thể xoay màn hình
+ * hoặc các thiết bị có thể gấp màn hình
+ */
+@media only screen and (max-width < 10000px) {}
+
+@media only screen and (max-width: 1285px) {
+	.table__cell-title {
+		display: block;
+	}
+
+	.table-title {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.tool-bar__menu {
+		display: block;
+	}
+
+	.side-bar {
+		display: none;
+	}
+}

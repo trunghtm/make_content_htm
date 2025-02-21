@@ -1,0 +1,17 @@
+﻿:root {
+	--main-color: #4E709D;
+	--hight-light-color: #93BFCF;
+	--window-color: #FFF;
+	--select-color: #e8f3eb;
+	--text-color: #000;
+	--invert-text-color: #fff;
+	--high-light-text-color: #4E709D;
+}
+
+.list-item {
+	border: 1px solid #4E709D;
+}
+
+*{
+	color: #fff;
+}

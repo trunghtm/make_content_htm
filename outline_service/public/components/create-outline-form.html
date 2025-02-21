@@ -1,0 +1,43 @@
+﻿<!--	item-->
+<div id='create-outline-form' class="form-modal">
+	<div class='form flx-column flx--jtf-start flx--al-start'>
+		<div class="form__title">
+			tạo outline
+		</div>
+		
+		<div class="input-container">
+			<select class="input" id='outline-platform' name="platform" placeholder='chọn nền tảng'>
+				<option value="0" selected>-- Chọn nền tảng --</option>
+				<option value="facebook">facebook</option>
+				<option value="instagram">Instagram</option>
+				<option value="wordpress">Wordpress</option>
+			</select>
+		</div>
+		<div class="form__tag-container" id='form__tag-container'></div>
+		<div class="input-container">
+			<input class="input" id='outline-tag' type="text" placeholder='Thêm tag cho outline'>
+			<p style='margin:0px; font-size: 12px;'>(Các tag cách nhau bằng dấu phẩy ',')</p>
+		</div>
+
+		<div class="input-container">
+			<p style='margin:0px; font-size: 12px;'>Chọn thời điểm tạo bài</p>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='postOrder' id='outline-postInstant' type='radio'><label for="">tạo bài ngay</label>
+			</div>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='postOrder' id='outline-postBook' type='radio' checked>
+				<label for="">
+					tạo theo lịch trình
+				</label>
+			</div>
+		</div>
+		
+		<div class="flx-row input-container">
+			<button class='button' invoker-spell='createOutline' id='camp-form-submit'>tạo</button>
+		</div>
+		<div class="flx-row input-container">
+			<button class='button' invoker-spell='removeElementById' invoker-tail='create-outline-form'
+				id='camp-form-cancel'>cancel</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,224 @@
+﻿<div class="flx-row flx--jtf-space-between flx--al-stretch --full-width" style='padding: 15px;'>
+	<!--form-->
+	<div id='make-content-form' class="make-content-form flx-column flx-jtf-start flx--al-start flx--gap-15px">
+		<h1>Form Yêu Cầu AI Tạo Content Quảng Cáo</h1>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label for="campaignName">Tên chiến dịch</label>
+			<input id='ads-campaign' class='input' type="text" id="campaignName" name="campaignName"
+				placeholder="Nhập tên chiến dịch">
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Mục tiêu quảng cáo</label>
+			<select id='ads-target' class='input' multiple>
+				<option value="Tăng nhận diện thương hiệu">Tăng nhận diện thương hiệu</option>
+				<option value="Tạo nhu cầu, thu hút khách hàng">Tạo nhu cầu, thu hút khách hàng</option>
+				<option value="Tạo đơn hàng trực tiếp" selected>Tạo đơn hàng trực tiếp</option>
+				<option value="remarketing">Remarketing</option>
+				<option value="other">Khác (ghi rõ bên dưới)</option>
+			</select>
+			<input id='ads-target-other' class='input' type="text" placeholder="Nhập mục tiêu khác (nếu có)">
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Nền tảng chạy quảng cáo</label>
+			<select id='ads-target-platform' class='input'>
+				<option value="facebook">Facebook</option>
+				<option value="tiktok">TikTok</option>
+				<option value="google">Google Ads</option>
+				<option value="zalo">Zalo Ads</option>
+				<option value="other">Khác</option>
+			</select>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Khách hàng mục tiêu</label>
+			<input id='ads-customer-age' class='input' type="number" placeholder="Độ tuổi (VD: 40-75)">
+			<select id='ads-customer-gender' class='input'>
+				<option value="0">Nam</option>
+				<option value="1">Nữ</option>
+				<option value="2" selected>Tất cả giới tính</option>
+			</select>
+			<input id='ads-location' class='input' type="text" placeholder="Khu vực địa lý">
+			<textarea id='ads-needs' class='input' placeholder="Nhu cầu, vấn đề khách hàng gặp phải"></textarea>
+			<textarea id='ads-insight' class='input' placeholder="Insight quan trọng cần khai thác"></textarea>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Loại nội dung cần tạo</label>
+			<select id='ads-type' class='input'>
+				<option value="Bài viết ngắn 50-100 từ">Bài viết ngắn (50-100 từ)</option>
+				<option value="Bài viết dài 150-300 từ">Bài viết dài (150-300 từ)</option>
+				<option value="caption">Caption ngắn</option>
+				<option value="Kịch bản video ngắn">Kịch bản video ngắn</option>
+				<option value="Bài PR dài (500-800 từ)">Bài PR dài (500-800 từ)</option>
+				<option value="ot">Khác (ghi rõ bên dưới)</option>
+			</select>
+
+			<input id='ads-type-other' class='input' type="text" placeholder="Nhập loại nội dung khác (nếu có)">
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Tone giọng cần dùng</label>
+			<select id='ads-tone' class='input'>
+				<option value="0">Đáng tin cậy, chuyên gia</option>
+				<option value="1">Gần gũi, đời thường</option>
+				<option value="2">Hài hước, viral</option>
+				<option value="3">Cảm xúc, chạm vào nỗi đau khách hàng</option>
+				<option value="4">Chuyên nghiệp</option>
+				<option value="5">Trang trọng</option>
+				<option value="6">Khách quan</option>
+				<option value="7">Hào hứng</option>
+				<option value="8">Kinh ngạc</option>
+				<option value="9">Cảnh báo</option>
+				<option value="10">Vui vẻ</option>
+				<option value="11">Thân thiện</option>
+				<option value="99">Khác (ghi rõ bên dưới)</option>
+			</select>
+			<input id='ads-tone-other' class='input' type="text" placeholder="Nhập tone giọng khác (nếu có)">
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Key Message & Nội dung chính</label>
+			<textarea id='ads-feature' class='input' placeholder="Lợi ích chính của sản phẩm"></textarea>
+			<textarea id='ads-USP' class='input' placeholder="Điểm khác biệt (USP) so với đối thủ"></textarea>
+			<textarea id='ads-sale' class='input' placeholder="Ưu đãi nếu có"></textarea>
+			<textarea id='ads-CTA' class='input' placeholder="Call to Action (CTA) mong muốn"></textarea>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="form-group flx-column flx--al-start flax--gap-15px --full-width">
+			<label>Thông tin bổ sung</label>
+			<textarea id='ads-keywords' class='input' placeholder="Từ khóa quan trọng cần có"></textarea>
+			<textarea id='ads-avoid' class='input' placeholder="Những điểm cần tránh"></textarea>
+			<input id='ads-ref-link' class='input' type="url" placeholder="Link tài liệu tham khảo (nếu có)">
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<!-- formula select -->
+			<div class="input-container">
+				<p class='form-note'><a href='/components/prompt-formula.html' target='_blank'>❔</a>Chọn
+					công thức viết bài:</p>
+				<select class="input " name="role" id="ads-formula">
+					<option value="AIDA" selected>AIDA</option>
+					<option value="APP">APP</option>
+					<option value="A FOREST">A FOREST</option>
+					<option value="BAB">BAB</option>
+					<option value="FAB">FAB</option>
+					<option value="FAS">FAS</option>
+					<option value="3S">3S</option>
+					<option value="3 reasons">3 Lý Do Vì Sao</option>
+					<option value="4A">4A</option>
+					<option value="4C">4C</option>
+					<option value="4P">4P</option>
+					<option value="4U">4U</option>
+					<option value="5 obstacles">5 Sự Cản Trở</option>
+					<option value="5A">5A</option>
+				</select>
+			</div>
+			<!-- /formula select -->
+
+			<div class="input-container">
+				<p class='form-note'>Ngôn ngữ:</p>
+				<select name="tone" id="ads-language" class="input input--inline">
+					<option value="Tiếng Việt" selected="">Tiếng việt</option>
+					<option value="Tiếng Anh">English</option>
+				</select>
+			</div>
+		</div>
+		<div class="flx-row flx--jtf-space-between --full-width" style='border-top: 1px solid black;;'>
+		</div>
+		<label>Yêu cầu đặc biệt</label>
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="form-note">Có Emoji 🌟</div>
+			<div class="input-container">
+				<div class="switch-container">
+					<div>
+						<label class="switch">
+							<input id='ads-emoji' type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="form-note">Tạo nhiều phiên bản nội dung để A/B testing</div>
+			<div class="input-container">
+				<div class="switch-container">
+					<div>
+						<label class="switch">
+							<input id='ads-multiversion' type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="form-note">Viết theo phong cách của một KOL/influencer cụ thể</div>
+			<div class="input-container">
+				<div class="switch-container">
+					<div>
+						<label class="switch">
+							<input id='ads-isKol' type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<input id='ads-kol-name' class='input' type="text" placeholder="Ghi rõ tên KOL nếu có">
+
+		<div class="flx-row flx--jtf-space-between --full-width">
+
+			<div class="form-note">Tích hợp câu chuyện drama để dẫn dắt khách hàng</div>
+			<div class="input-container">
+				<div class="switch-container">
+					<div>
+						<label class="switch">
+							<input id='ads-example' type="checkbox">
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<input id='ads-other-requests' class='input' type="text" placeholder="Nhập yêu cầu khác (nếu có)">
+
+
+		<!-- button  -->
+		<div class="flx-row flx--jtf-space-between input-container --full-width">
+			<div>
+				<button class='--gradient-bg button' invoker-spell='generatePrompt'>Tạo quảng cáo</button>
+			</div>
+			<div>
+				<button class='button' invoker-spell='fillSampleData'>Điền dữ liệu mẫu</button>
+			</div>
+		</div>
+	</div>
+	<!--/form-->
+	<div class="splitter">
+
+	</div>
+	<div id='result-container' class="result-container flx-column flx--jtf-start"
+		style='overflow-y: auto;'>
+	</div>
+</div>

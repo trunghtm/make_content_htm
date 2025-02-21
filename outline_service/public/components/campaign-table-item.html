@@ -1,0 +1,77 @@
+﻿<!--	item-->
+
+<div class="table-row flx-row  flx--jtf-start flx--gap-5px flx--al-start">
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start" style='width: 300px;'>
+		<div class="table__cell-title">
+			campaign name
+		</div>
+		<div invoker-spell='readCampaign' id='{{id}}' invoker-tail='{{id}}' rp-type='table' class="table__cell-content">
+			{{title}}
+		</div>
+	</div>
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start" style='width: 300px;'>
+		<div class="table__cell-title">
+			topic
+		</div>
+		<div class="table__cell-content">
+			{{topic}}
+		</div>
+	</div>
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start">
+		<div class="table__cell-title">
+			ngày bắt đầu
+		</div>
+		<div class="table__cell-content">
+			{{startDate}}
+		</div>
+	</div>
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start">
+		<div class="table__cell-title">
+			ngày kết thúc
+		</div>
+		<div class="table__cell-content">
+			{{endDate}}
+		</div>
+	</div>
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start">
+		<div class="table__cell-title">
+			đã kết thúc
+		</div>
+		<div class="table__cell-content list-item__icon">
+			<svg xmlns="http://www.w3.org/2000/svg" style='padding: 0; margin: 0;' width="16" height="16" fill="currentColor"
+				class="bi bi-check-circle-fill list-item__icon {{isEnded}}" viewBox="0 0 16 16">
+				<path
+					d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+			</svg>
+		</div>
+	</div>
+
+	<div class="table-cell flx-column flx--al-start flx--jtf-start list-item__icon">
+		<div class="table__cell-title">
+			đã hoàn thành
+		</div>
+		<div class="table__cell-content">
+			<svg xmlns="http://www.w3.org/2000/svg" style='padding: 0; margin: 0;' width="16" height="16" fill="currentColor"
+				class="bi bi-check-circle-fill list-item__icon {{isCompleted}}" viewBox="0 0 16 16">
+				<path
+					d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+			</svg>
+		</div>
+	</div>
+</div>
+
+<!--	/item-->
+<!--
+ id: result[i]._id,
+title: result[i].name,
+topic: result[i].topic,
+startDate: formatDateString(result[i].startDate),
+endDate: formatDateString(result[i].endDate),
+isCompleted: result[i].isCompleted ? '--active' : '--inactive',
+isEnded: result[i].isEnded > 0 ? '--active' : '--inactive', 
+-->

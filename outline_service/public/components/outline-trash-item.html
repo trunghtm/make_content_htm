@@ -1,0 +1,31 @@
+﻿<!--	item-->
+<div invoker-spell='restoreOutline' invoker-tail='{{id}}' id='{{id}}' class='list-item flx-row flx-jtf-start'>
+	<div><img class="list-item__img" src="./icon/{{platform}}-mono.svg" height='30px' width='30px' alt=""></div>
+	<div class='flx-column flx--gap-5px flx--jtf-center flx--al-start'>
+		<div class='flx-column flx--al-start'>
+			<div class='list-item__title'>{{title}}</div>
+			<div class='list-item__title' style='font-size: 12px'>{{id}}</div>
+		</div>
+		<div class='list-item__info flx-row flx-jtf-start'>
+			<div id='{{id}}-startDate'>
+				{{startDate}}
+			</div>
+			<div>
+				-
+			</div>
+			<div id='{{id}}-endDate'>
+				{{endDate}}
+			</div>
+			<div id='{{id}}-isMakeContent' class='{{isMakeContent}}'>
+				<img class="list-item__icon" src="./icon/texted-mono.svg" alt="">
+			</div>
+			<div id='{{id}}-isCompleted' class='{{isCompleted}}'>
+				<img class="list-item__icon" src="./icon/booked-mono.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<div invoker-spell='restoreOutline' invoker-tail='{{id}}' style='margin-left: auto;'>
+		<img class="" src="./icon/delete-fill-mono.svg" alt="" height='25px' width='25px'>
+	</div>
+</div>
+<!--	/item-->

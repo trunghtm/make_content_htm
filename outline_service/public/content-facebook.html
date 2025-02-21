@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" id='theme' href="./css/theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/frame.css">
+		<link rel="stylesheet" href="./css/grid.css">
+		<link rel="stylesheet" href="./css/loader.css">
+		<link rel="stylesheet" href="./css/component.css">
+		<link rel="icon" href="./icon/favicon.svg" type="image/svg">
+
+		<title>Content maker</title>
+		<script src='./js/racoon-pieces.js'></script>
+	</head>
+
+	<body>
+		<div class="header flx-row flx--jtf-start flx--al-center">
+			<div class='header__title' style='margin-left: 10px;'>
+				content editor
+			</div>
+		</div>
+
+		<div class="flx-row flx--jtf-start" style='height: calc(100vh - 70px); padding: 0;'>
+			<div class="sidebar">
+
+				<div class="sidebar-icon-container flx-column flx--jtf-start flx--al-center flx--gap-15px">
+
+					<div class='main-menu__icon flx-column flx--al-center' invoker-spell=''>
+						<img class="list-item__img" src="./icon/content-management-system.png" alt="">
+						<div style='color: var(--text-color);'>công cụ khác</div>
+					</div>
+
+
+					<div class='main-menu__icon flx-column flx--al-center' invoker-spell=''>
+						<div class="di">
+							<img class="list-item__img" src="./icon/checklist.png" alt="">
+						</div>
+						<div style='color: var(--text-color);'>viết lại văn bản</div>
+					</div>
+
+					<div class='main-menu__icon flx-column flx--al-center' invoker-spell=''>
+						<img class="list-item__img" src="./icon/checklist.png" alt="">
+						<div style='color: var(--text-color);'>kiểm tra đạo văn</div>
+					</div>
+
+					<div class='main-menu__icon flx-column flx--al-center' invoker-spell=''>
+						<img class="list-item__img" src="./icon/checklist.png" alt="">
+						<div style='color: var(--text-color);'>tóm tắt văn bản</div>
+					</div>
+
+					<div class='main-menu__icon flx-column flx--al-center' invoker-spell=''>
+						<img class="list-item__img" src="./icon/checklist.png" alt="">
+						<div style='color: var(--text-color);'>Tạo nội dung</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- content-container -->
+			<div class="content-container flx-column flx--jtf-space-between" style='flex: 10000; height: 100%;'>
+
+				<div id='content-box' class="content flx-column flx-jtf-start --full-width"
+					style=' background-color: rgba(239, 242, 249, 1);'>
+
+					<div id='icon-box' class="icon-box flx-row flx--gap-20px --full-width">
+						<!-- tool card -->
+						<div class="tool-card flx-column flx--jtf-space-between">
+
+							<div class="flx-row flx--jtf-start flx--gap-15px" name='card header' style='height: 100%;'>
+								<div class="flx-column flx--jtf-center">
+									<img width="60" alt="Viết bài theo quy trình" src="./icon/ads.png">
+								</div>
+
+								<div class="flx-column flx--jtf-start flx--al-start" style='width: 212px; height: 100%;'>
+									<div class="name-tool">Tạo quảng cáo</div>
+									<div class="description-tool">Tạo bài quảng cáo phù hợp nền tảng truyền thông</div>
+								</div>
+							</div>
+
+							<div class="flx-row flx--jtf-end flx--al-end" style='width: 100%;'>
+								<div>
+									<button class='button' invoker-spell='getPromptGenForm'>
+										Bắt đầu
+									</button>
+								</div>
+							</div>
+
+						</div>
+						<!-- /tool card -->
+					</div>
+
+				</div>
+				<div class="footer">
+					Hatuma AI-agent tool kit, Copyright © 2025 Hatuma. All rights reserved.
+				</div>
+
+			</div>
+			<div id='loader__container' class="loader__container hidden">
+				<div class="loader__warper">
+					<div class="loader"></div>
+				</div>
+			</div>
+			<!-- /content-container -->
+			<script src="./js/helper.js"></script>
+			<script src="./js/ui.js"></script>
+			<script src="./js/grid-menu.js"></script>
+			<script src="./js/facebook-content.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" id='theme' href="../css/theme.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/frame.css">
+		<link rel="stylesheet" href="../css/grid.css">
+		<link rel="icon" href="../icon/favicon.svg" type="image/svg">
+
+		<title>Content maker</title>
+		<script src='../js/racoon-pieces.js'></script>
+	</head>
+
+	<body>
+		<div id='login-form' class="form-modal">
+			<div class='form flx-column flx--jtf-start flx--al-start'>
+				<div class="form__title">
+					Đăng nhập
+				</div>
+				<div class="input-container">
+					<p style='margin:0px; font-size: 12px;'>Tên đăng nhập</p>
+					<input class="input" id='login-userName' type="text" placeholder='Nhập tên tên đăng nhập của bạn'>
+				</div>
+				<div class="input-container">
+					<p style='margin:0px; font-size: 12px;'>Mật khẩu</p>
+					<input class="input" id='login-password' type="password" placeholder='Nhập mật khẩu của bạn'>
+				</div>
+				<div class="flx-row input-container">
+					<button class='button' invoker-spell='authentication' id=''>đăng nhập</button>
+				</div>
+			</div>
+		</div>
+		<script src="../js/helper.js"></script>
+		<script src="../js/login.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,78 @@
+﻿<!--	item-->
+<div id='create-campaign-form' class="form-modal">
+	<div class='form flx-column flx--jtf-start flx--al-start'>
+		<div class="form__title">
+			tạo chiến dịch
+		</div>
+		<div class="input-container">
+			<input class="input" id='campaign-name' type="text" placeholder='Nhập tên chiến dich ở đây'>
+		</div>
+		<div class="input-container">
+			<textarea class="input" name="" id="campaign-topic" placeholder='Nhập chủ đề của chiến dịch ở đây'
+				height='150px'></textarea>
+		</div>
+		<div class="input-container">
+			<select class="input" id='campaign-role' name="role" id="role" aria-placeholder='Chọn thẩm quyền cho dự án'>
+				<option value="manager" selected>-- Chọn quyền --</option>
+				<option value="manager">Manager</option>
+				<option value="content">Content</option>
+				<option value="collaborator">Cộng tác viên</option>
+			</select>
+		</div>
+		<div class="form__tag-container" id='form__tag-container'></div>
+		<div class="input-container">
+			<input class="input" id='campaign-tag' type="text" placeholder='Thêm tag cho chiến dịch'>
+			<p style='margin:0px; font-size: 12px;'>(Các tag cách nhau bằng dấu phẩy ',')</p>
+		</div>
+		<div class="input-container">
+			<p style='margin:0px; font-size: 12px;'>Nhập số lượng bài đăng cho mỗi ngày</p>
+			<input class="input" id='campaign-articleQty' type='number' value='1'>
+		</div>
+		<div class="input-container">
+			<p style='margin:0px; font-size: 12px;'>Chọn nền tảng đăng bài</p>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='platform' id='campaign-facebook' value='facebook' type='checkbox' checked><label
+					for="">facebook</label>
+			</div>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='platform' id='campaign-instagram' value='instagram' type='checkbox'><label
+					for="">instagram</label>
+			</div>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='platform' id='campaign-wordpress' value='wordpress' type='checkbox'><label
+					for="">wordpress</label>
+			</div>
+		</div>
+		<div class="input-container">
+			<p style='margin:0px; font-size: 12px;'>Chọn thời điểm tạo bài</p>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='postOrder' id='campaign-postInstant' type='radio'><label for="">tạo bài ngay</label>
+			</div>
+			<div class='flx-row flx--jtf-start'>
+				<input class="" name='postOrder' id='campaign-postBook' type='radio' checked><label for="">tạo theo lịch
+					trình</label>
+			</div>
+		</div>
+		<div class="input-container">
+			<p style='margin:0px; font-size: 12px;'>Nhập giờ đăng bài</p>
+			<input class="input" id='campaign-postTime' type='time' value="08:30">
+		</div>
+		<div class="flx-row input-container">
+			<p style='margin:0px'>Ngày bắt đầu - Ngày kết thúc</p>
+		</div>
+		<div class="flx-row input-container">
+			<input class="input-date" id='campaign-start' type="date" id='form-start-date'
+				placeholder='thêm tag cho chiến dịch'>
+			<div>-</div>
+			<input class="input-date" id='campaign-end' type="date" id='form-end-date'
+				placeholder='thêm tag cho chiến dịch'>
+		</div>
+		<div class="flx-row input-container">
+			<button class='button' invoker-spell='createCampaign' id='camp-form-submit'>tạo</button>
+		</div>
+		<div class="flx-row input-container">
+			<button class='button' invoker-spell='removeElementById' invoker-tail='create-campaign-form'
+				id='camp-form-cancel'>thôi</button>
+		</div>
+	</div>
+</div>
